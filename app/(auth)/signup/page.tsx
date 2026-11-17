@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { ArrowLeft, Check, Eye, EyeOff, Loader2 } from "lucide-react"
 
-import { SkoolLogo } from "@/components/skool-logo"
 import { SocialLogins } from "@/components/auth/social-logins"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -57,7 +56,6 @@ export default function SignupPage() {
         </Link>
 
         {/* Minimal brand logo in top bar */}
-        <SkoolLogo size="sm" showBadge={false} href="/" />
       </div>
 
       {/* Header */}
@@ -232,7 +230,7 @@ export default function SignupPage() {
       <div className="mt-6 border-t border-border/60 pt-4 text-center text-xs text-muted-foreground">
         <span>Already have an account? </span>
         <Link
-          href="/login"
+          href="/signin"
           className="font-medium text-foreground underline underline-offset-4 transition-opacity hover:opacity-80"
         >
           Sign in

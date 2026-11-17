@@ -3,7 +3,6 @@
 import React from "react"
 import Link from "next/link"
 
-import { SkoolLogo } from "@/components/skool-logo"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -21,14 +20,14 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo with subtle accent */}
         <div className="flex items-center gap-6">
-          <SkoolLogo href="/" size="md" />
+          skool
         </div>
 
         {/* Right Actions: Theme Toggle + Auth Buttons */}
         <div className="flex items-center gap-2 sm:gap-3">
           {/* Sign In Button */}
           <Link
-            href="/login"
+            href="/signin"
             className={cn(
               buttonVariants({ variant: "ghost", size: "sm" }),
               "cursor-pointer text-xs font-medium hover:bg-muted sm:text-sm"

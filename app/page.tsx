@@ -12,7 +12,6 @@ import {
 } from "lucide-react"
 
 import { SiteHeader } from "@/components/site-header"
-import { SkoolLogo } from "@/components/skool-logo"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -379,7 +378,6 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 text-center sm:p-12">
             <div className="relative z-10 mx-auto max-w-xl space-y-4">
-              <SkoolLogo size="md" className="justify-center" />
               <h3 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                 Ready to transform your learning experience?
               </h3>
@@ -416,7 +414,6 @@ export default function LandingPage() {
       <footer className="border-t border-border/70 bg-background py-10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <SkoolLogo size="sm" />
             <span className="text-xs text-muted-foreground">
               © {new Date().getFullYear()} Skool LMS Platform. All rights
               reserved.
